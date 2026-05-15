@@ -16,7 +16,7 @@ O **Nexus Scans** é uma ferramenta industrial de análise de disco desenvolvida
 
 - 🔍 **Análise Profunda:** Varredura completa de arquivos e pastas com cálculo de tamanho recursivo.
 - 📊 **Ordenação Inteligente:** Resultados apresentados automaticamente do maior para o menor item.
-- 🗑️ **Deleção Segura via UI:** Integração com a `Microsoft.VisualBasic` para enviar arquivos à Lixeira com a interface nativa do Windows (confirmação visual).
+- 🗑️ **Deleção via Sistema Windows:** Integração direta com a API do Windows para enviar arquivos à Lixeira. Isso garante que você use a interface nativa do sistema para confirmar a exclusão, trazendo mais segurança e familiaridade.
 - 🛡️ **Elevação de Privilégios:** Comando `/admin` integrado para reiniciar o script com direitos de Administrador instantaneamente.
 - 🚀 **Feedback Visual:** Barra de progresso nativa para acompanhar escaneamentos de grandes volumes de dados.
 
@@ -52,8 +52,8 @@ Exibição detalhada dos tamanhos em MB/GB e lista de comandos disponíveis.
 ## 🚀 Como Executar
 
 1. Certifique-se de que a política de execução do PowerShell permite scripts (`Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`).
-2. Navegue até a pasta do projeto.
-3. Execute o script:
+2. Execute o script `scan-pasta.ps1` de qualquer local.
+3. **Flexibilidade Total:** O script solicitará que você cole o caminho da pasta que deseja analisar, não sendo necessário estar no diretório do projeto.
    ```powershell
    .\scan-pasta.ps1
    ```
