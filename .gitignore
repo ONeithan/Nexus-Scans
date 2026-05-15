@@ -1,0 +1,5 @@
+# PowerShell
+.vscode/
+*.log
+*.tmp
+*.bak
